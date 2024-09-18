@@ -6,8 +6,6 @@ import { Progress, ProgressIndicator } from "./progress-bar";
 import { Separator } from "./separator";
 import { OutlineButton } from "./outline-button";
 
-const style = { width: 200 };
-
 export function Summary() {
   return (
     <div className="py-10 max-w-[480px] px-5 mx-auto flex flex-col gap-6">
