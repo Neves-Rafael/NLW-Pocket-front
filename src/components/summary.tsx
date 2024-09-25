@@ -4,12 +4,13 @@ import { DialogTrigger } from "./dialog";
 import logo from "../assets/icon-in-orbit.svg";
 import { Progress, ProgressIndicator } from "./progress-bar";
 import { Separator } from "./separator";
-import { OutlineButton } from "./outline-button";
 import { getSummary } from "../http/get-summary";
 import { useQuery } from "@tanstack/react-query";
 import dayjs from "dayjs";
 import ptBR from "dayjs/locale/pt-BR";
 import { PendingGoals } from "./pending-goals";
+
+dayjs.locale(ptBR);
 
 export function Summary() {
   const { data } = useQuery({
